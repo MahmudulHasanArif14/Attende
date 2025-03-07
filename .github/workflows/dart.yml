@@ -11,21 +11,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout the code
       - uses: actions/checkout@v4
 
-      # Setup Flutter SDK with a newer version that supports Dart SDK 3.x
+      # Setup Flutter SDK with a version that supports Dart SDK 3.x
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.10.0'  # Make sure this version supports Dart SDK 3.x
+          flutter-version: '3.10.0'  # This version supports Dart SDK 3.x
 
-      # Install dependencies
+      # Ensure Flutter dependencies are up-to-date
       - name: Install dependencies
         run: flutter pub get
 
-      # Analyze project source
+      # Analyze the project for issues
       - name: Analyze project source
         run: flutter analyze
 
-      # Run tests in the test/ directory
+      # Run tests located in the test/ directory
       - name: Run tests
         run: flutter test
