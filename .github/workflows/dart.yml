@@ -13,10 +13,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Setup Flutter SDK
+      # Setup Flutter SDK with a specific version
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: 'stable'  # You can specify a different version if needed.
+          flutter-version: '3.7.0'  # Replace this with your desired Flutter version
 
       # Install dependencies
       - name: Install dependencies
