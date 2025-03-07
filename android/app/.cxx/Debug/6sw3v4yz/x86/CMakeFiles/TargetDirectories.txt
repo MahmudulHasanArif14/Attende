@@ -1,0 +1,2 @@
+/home/arif/Desktop/Attendee_App/attende/android/app/.cxx/Debug/6sw3v4yz/x86/CMakeFiles/edit_cache.dir
+/home/arif/Desktop/Attendee_App/attende/android/app/.cxx/Debug/6sw3v4yz/x86/CMakeFiles/rebuild_cache.dir

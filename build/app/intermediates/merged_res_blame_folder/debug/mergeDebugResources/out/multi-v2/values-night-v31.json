@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.attende.app-mergeDebugResources-24:/values-night-v31/values-night-v31.xml",
+            "map": [
+                {
+                    "source": "/home/arif/Desktop/Attendee_App/attende/android/app/src/main/res/values-night-v31/styles.xml",
+                    "from": {
+                        "startLines": "3,18",
+                        "startColumns": "4,4",
+                        "startOffsets": "172,1149",
+                        "endLines": "11,20",
+                        "endColumns": "12,12",
+                        "endOffsets": "798,1313"
+                    },
+                    "to": {
+                        "startLines": "2,11",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,686",
+                        "endLines": "10,13",
+                        "endColumns": "12,12",
+                        "endOffsets": "681,850"
+                    }
+                }
+            ]
+        }
+    ]
+}
