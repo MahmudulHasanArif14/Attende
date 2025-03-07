@@ -13,19 +13,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Setup Flutter SDK with a specific version
+      # Setup Flutter SDK with a newer version that supports Dart SDK 3.x
       - uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.7.0'  # Replace this with your desired Flutter version
+          flutter-version: '3.10.0'  # Make sure this version supports Dart SDK 3.x
 
       # Install dependencies
       - name: Install dependencies
         run: flutter pub get
-
-      # Uncomment this step to verify the use of 'flutter format' on each commit.
-      # This will ensure all Flutter code is formatted correctly.
-      # - name: Verify formatting
-      #   run: flutter format --output=none --set-exit-if-changed .
 
       # Analyze project source
       - name: Analyze project source
