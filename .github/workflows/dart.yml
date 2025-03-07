@@ -1,4 +1,4 @@
-name: Dart
+name: Flutter
 
 on:
   push:
@@ -13,24 +13,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      # Setup Dart SDK
-      # You can specify other versions if desired, see documentation here:
-      # https://github.com/dart-lang/setup-dart/blob/main/README.md
-      - uses: dart-lang/setup-dart@9a04e6d73cca37bd455e0608d7e5092f881fd603
+      # Setup Flutter SDK
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 'stable'  # You can specify a different version if needed.
 
       # Install dependencies
       - name: Install dependencies
-        run: dart pub get
+        run: flutter pub get
 
-      # Uncomment this step to verify the use of 'dart format' on each commit.
-      # This will ensure all Dart code is formatted correctly.
+      # Uncomment this step to verify the use of 'flutter format' on each commit.
+      # This will ensure all Flutter code is formatted correctly.
       # - name: Verify formatting
-      #   run: dart format --output=none --set-exit-if-changed .
+      #   run: flutter format --output=none --set-exit-if-changed .
 
       # Analyze project source
       - name: Analyze project source
-        run: dart analyze
+        run: flutter analyze
 
       # Run tests in the test/ directory
       - name: Run tests
-        run: dart test
+        run: flutter test
