@@ -46,8 +46,7 @@ class HomepageState extends State<Homepage> {
           child: Center(
             child: LayoutBuilder(
               builder: (context, constraints) {
-                double textSize = constraints.maxWidth * 0.1; // Responsive text size
-                double svgSize = textSize * 0.4; // Responsive SVG size
+               // double textSize = constraints.maxWidth * 0.1; // Responsive text size
 
                 return Column(
                   mainAxisAlignment: MainAxisAlignment.center,

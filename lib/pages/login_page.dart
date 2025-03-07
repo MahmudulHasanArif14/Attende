@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -150,7 +149,9 @@ class _LoginPageState extends State<LoginPage> {
                 Align(
                   alignment: Alignment.centerRight,
                   child: TextButton(
-                    onPressed: () => kDebugMode ? print("Forgot password") : null,
+                    onPressed: (){
+                      //Code goes here
+                    },
                     style: TextButton.styleFrom(
                       splashFactory: NoSplash.splashFactory,
                       overlayColor: Colors.black,
@@ -209,7 +210,7 @@ class _LoginPageState extends State<LoginPage> {
                   width: double.infinity,
                   child: OutlinedButton(
                     onPressed: () {
-                      print("Google login");
+                      // print("Google login");
                     },
                     style: OutlinedButton.styleFrom(
                       padding: const EdgeInsets.all(15),
