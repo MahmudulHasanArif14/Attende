@@ -16,6 +16,7 @@ dependencies:
   flutter_svg: ^2.0.9
   flutter_native_splash: ^2.4.5  # Ensuring native splash support
   font_awesome_flutter: ^10.8.0
+  intl_phone_field: ^3.2.0
 
 dev_dependencies:
   flutter_test:

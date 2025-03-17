@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
 import 'login_page.dart';
 
 class Splashscreen extends StatefulWidget {
@@ -17,12 +18,13 @@ class SplashscreenState extends State<Splashscreen> {
     _navigateToLoginPage();
   }
 
-
   void _setSystemUI() {
-    SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-      statusBarColor: Colors.transparent,
-      statusBarIconBrightness: Brightness.light,
-    ));
+    SystemChrome.setSystemUIOverlayStyle(
+      SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+        statusBarIconBrightness: Brightness.light,
+      ),
+    );
   }
 
   // Navigating to Login Page
@@ -33,12 +35,10 @@ class SplashscreenState extends State<Splashscreen> {
     Navigator.pushReplacement(
       context,
       PageRouteBuilder(
-        pageBuilder: (context, animation, secondaryAnimation) => const LoginPage(),
+        pageBuilder:
+            (context, animation, secondaryAnimation) => const LoginPage(),
         transitionsBuilder: (context, animation, secondaryAnimation, child) {
-          return FadeTransition(
-            opacity: animation,
-            child: child,
-          );
+          return FadeTransition(opacity: animation, child: child);
         },
       ),
     );
@@ -72,11 +72,7 @@ class SplashscreenState extends State<Splashscreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(height: 20),
-              Icon(
-                Icons.fingerprint,
-                size: iconSize,
-                color: Colors.white,
-              ),
+              Icon(Icons.fingerprint, size: iconSize, color: Colors.white),
               const SizedBox(height: 20),
               const Text(
                 'Attende',

@@ -17,11 +17,11 @@ class HomepageState extends State<Homepage> {
 
 
   void _navigateToLogin() async {
-    await Future.delayed(const Duration(seconds: 2));  // You might want a shorter delay for testing
+    await Future.delayed(const Duration(seconds: 2));
     if (mounted) {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const LoginPage()), // Make sure LoginPage is defined
+        MaterialPageRoute(builder: (context) => const LoginPage()),
       );
     }
   }
